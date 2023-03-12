@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-input {
+  @apply outline-none font-medium border-2 border-gray-400 rounded w-full p-2 focus:border-green-400;
+}
+.form-btn {
+  @apply flex items-center px-4 py-1 mt-1 mb-1 bg-green-400 font-semibold text-black uppercase tracking-wider border-2 rounded border-green-400 transition hover:bg-green-500 hover:border-green-500;
+}
+.form-btn-secondary {
+  @apply flex items-center px-4 py-1 mt-1 mb-1 bg-gray-400 font-semibold text-black uppercase tracking-wider border-2 rounded border-gray-400 transition hover:bg-gray-500 hover:border-gray-500;
+}
+.form-btn-danger {
+  @apply flex items-center px-4 py-1 mt-1 mb-1 bg-red-500 font-semibold text-black uppercase tracking-wider border-2 rounded border-red-500 transition hover:bg-red-600 hover:border-red-600;
+}
+.link {
+  @apply font-semibold text-green-500 hover:underline hover:text-green-600;
+}
+
+.sidebar__chats {
+  /* Custom Scroll Bar for firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(146, 145, 145, 0.705) #e0e0e0;
+}
+
+.sidebar__chats::-webkit-scrollbar {
+  width: 5px;
+  background-color: #e0e0e0;
+}
+
+.sidebar__chats::-webkit-scrollbar-thumb {
+  background-color: rgba(146, 145, 145, 0.705);
+}
